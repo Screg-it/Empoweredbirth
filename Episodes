@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Episodes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Episodes</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="episodes.html">Episodes</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Latest Episodes</h2>
+      <p>This is where each episode will appear once you add them.</p>
+      <p>For now, consider this your placeholder area.</p>
+    </section>
+
+    <section>
+      <h2>Episode List</h2>
+
+      <!-- EXAMPLE EPISODE BLOCK -->
+      <div class="episode">
+        <h3>Episode 1, Name Goes Here</h3>
+        <p>A short description of the episode. Something simple like what it is about or who is in it.</p>
+        <a class="button" href="#">Listen</a>
+      </div>
+
+      <div class="episode">
+        <h3>Episode 2, Another Placeholder</h3>
+        <p>You can duplicate these blocks and update them as you upload real episodes.</p>
+        <a class="button" href="#">Listen</a>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>© 2025 My Website</p>
+    </footer>
+
+  </body>
+</html>
