@@ -2,7 +2,7 @@
    Empowered Birth Color Palette
 ---------------------*/
 
-/* Page background */
+/* Page background and global text */
 body {
   background-color: #FDF6F0; /* Soft Beige */
   font-family: Arial, sans-serif;
@@ -10,14 +10,29 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   color: #222222; /* Main text color */
+  box-sizing: border-box;
 }
 
-/* Header and navigation */
+/* Header and Navigation */
 header {
-  background-color: #F3E8FF; /* Light Lilac */
-  padding: 20px 0;
-  text-align: center;
+  display: flex;          
+  flex-direction: column;  
+  align-items: center;     
+  padding: 20px 0;        
   border-bottom: 1px solid #ccc;
+  min-height: 120px;       
+  margin-bottom: 40px;
+  background-color: #F3E8FF; /* Light Lilac */
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
@@ -25,6 +40,7 @@ nav a {
   text-decoration: none;
   color: #5A2D82; /* Deep Purple */
   font-weight: bold;
+  font-size: 1rem;
 }
 
 nav a:last-child {
@@ -64,8 +80,13 @@ footer {
   opacity: 0.9;
 }
 
-/* Section backgrounds for boxes (episodes, Birth Essentials, resources) */
-.home-episode, .resource-card {
+/* Section spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* Episode boxes and Birth Essentials/Resources cards */
+.episode, .home-episode, .resource-card {
   background-color: #F5F5F5; /* Very Light Gray */
   border: 1px solid #ccc;
   padding: 20px;
@@ -74,98 +95,11 @@ footer {
   box-sizing: border-box;
 }
 
-.home-episode h3, .resource-card h3 {
+.episode h3, .home-episode h3, .resource-card h3 {
   margin-top: 0;
 }
 
-/* Body */
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: #222;
-}
-
-/* Header and Navigation */
-header {
-  display: flex;          
-  flex-direction: column;  
-  align-items: center;     
-  padding: 20px 0;        
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;  
-  min-height: 120px;       
-  margin-bottom: 40px;     
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-nav a:last-child {
-  margin-right: 0;
-}
-
-nav a:hover {
-  opacity: 0.6;
-}
-
-/* Section spacing */
-section {
-  margin-bottom: 40px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #ccc;
-  margin-top: 40px;
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* Episodes styling */
-.episode {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.episode h3 {
-  margin-top: 0;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 16px;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-.button:hover {
-  opacity: 0.7;
-}
-
-/* Homepage container to align content */
+/* Container for uniform content width */
 .container {
   max-width: 800px;
   margin: 0 auto;
