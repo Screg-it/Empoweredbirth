@@ -6,14 +6,25 @@ body {
   color: #222;
 }
 
+/* Header and Navigation */
 header {
-  padding-bottom: 20px;
+  display: flex;           /* Aligns items vertically */
+  flex-direction: column;  /* Title on top, nav below */
+  align-items: center;     /* Centers everything horizontally */
+  padding: 20px 0;         /* Space around header */
   border-bottom: 1px solid #ccc;
-  margin-bottom: 40px;
+  box-sizing: border-box;  /* Ensures padding doesn’t change height */
+  min-height: 120px;       /* Keeps header height uniform on every page */
+  margin-bottom: 40px;     /* Space below header */
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
@@ -21,11 +32,17 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:last-child {
+  margin-right: 0;
 }
 
 nav a:hover {
   opacity: 0.6;
 }
+
 
 section {
   margin-bottom: 40px;
